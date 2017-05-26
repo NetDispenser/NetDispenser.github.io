@@ -13,6 +13,10 @@
   </head>
   <style>
     p{text-align:justify;}
+    div.led{width:20px;height:15px;border:solid #FFF 1px;background-color:#333;}
+    div.led.red{background-color:#F00;}
+    div.led.green{background-color:#0F0;}
+    div.led.yellow{background-color:#FF0;}
   </style>
   <body>
 
@@ -30,6 +34,17 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+      
+      <center>
+        <table>
+          <tr>
+            <td><div id="red" class="led"/></td>
+            <td><div id="green" class="led"/></td>
+            <td><div id="yellow" class="led"/></td>
+          </tr>
+        </table>
+      </center>
+      
       <section id="main_content" class="inner">
         <h2 id="welcome-to-the-netdispenser">Welcome to the NetDispenser</h2>
         
@@ -73,6 +88,11 @@ the <a href="http://meter.creditfeed.me" target="_blank">CreditMeter website</a>
       </footer>
     </div>
 
-    
+    <script>
+      function blink(){
+        console.log("blink");
+      }
+      window.setInterval("blink",2000);
+    </script>
   </body>
 </html>
