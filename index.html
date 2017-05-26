@@ -56,14 +56,14 @@
 <p><strong>May 25, 2017</strong>
 NetDispenser is an automated, kiosk-type platform that requires kids to complete activities in order to earn internet access. Last weekend, at PyCon in Portland, <a href="http://mybizmo.blogspot.com" target="_blank">Kirby Urner</a> and <a href="http://ccosse.github.io" target="_blank">I</a> gave demos of the platform at our 
 <a href="https://flic.kr/y/2GSVF7K" target="_blank">poster session</a>, using our tablets.  Our goal was to collect email addresses of interested people and start building a community right there at PyCon.  Roughly 100 people left us their email so that we could invite them to the project once we got a bit more organized.</p>
-<h3>Why NetDispenser</h3>
+<h3>Why it exists</h3>
 <p>This project began in 2005 when I would send email to my kids containing a couple links to articles which I thought they should read.  Saying “please” had no effect, and thus I developed a JavaScript paragraph-reconstruction activity called, simply, Article Reader.  The Article Reader made sure that they read carefully, but they could still browse the net in  another tab instead of reading the article.  Thus came the concept of earning time on the internet in exchange for completing activities.  Early prototypes showed that this was very effective, indeed, resulting in things like children begging for another math exercise, and so on.  It may be for the “wrong” reasons, but it also turns out that they find themselves compelled towards expedience when effort is required to complete an activity.</p>
 
 <h3>What it is</h3>
 <p>The NetDispenser is two pieces: A CreditMeter, which is a <a href="https://www.raspberrypi.org/">Raspberry-Pi 3</a> configured as a WiFi access point, and broadcasting
 the <a href="http://meter.creditfeed.me" target="_blank">CreditMeter website</a> locally.  This device becomes the WiFi access point for the kids.  It only gives them internet access when the CreditMeter application is actively consuming their credits.  When the credits are gone then the child must visit the <a href="http://www.creditfeed.me" target="_blank">CreditFeeder website</a> and perform credit-earning activities which a parent has queued for them.  Once earned, the credits are transferred back to the CreditMeter with the push of a single button.  The CreditFeeder website is remote so that a parent can assign activities from the comfort of a remote office and then rest assured that the kids are working diligently.</p>
 
-<h3>Where next</h3>
+<h3>Next priorities</h3>
 <p>After PyCon my next goal is to build a core community and help each member obtain a working credit-meter.  The online credit-meter doesn’t really do anything except enable you to go through the motions and pretend that it’s actually controlling your internet access.  But that’s the web interface you get when you connect to the Raspberry-Pi’s credit-meter website.</p>
 
 <h3>Building a community</h3>
@@ -75,14 +75,18 @@ the <a href="http://meter.creditfeed.me" target="_blank">CreditMeter website</a>
   <li><a href="https://github.com/NetDispenser/CreditFeeder" target="_blank">Credit-Feeder Screenshots</a>
 </ul>    
     
-<h3>Presentations</h3>
-        <ul>
-          <li><a href="https://github.com/NetDispenser/NetDispenser.github.io/blob/master/Credit-Meter-Assisted-Learning.pdf" target="_blank">Credit-Meter Assisted Learning</a>
-          <li><a href="https://github.com/NetDispenser/NetDispenser.github.io/blob/master/Earning\ With\ A\ Capital\ L.pdf" target="_blank">Earning with a capital L</a>
-        </ul>        
+<h3>White paper</h3>
+<ul>
+<li><a href="https://github.com/NetDispenser/NetDispenser.github.io/blob/master/Earning\ With\ A\ Capital\ L.pdf" target="_blank">Earning with a capital L</a>
+</ul>        
 
-      </section>
-    </div>
+<h3>Presentation</h3>
+<ul>
+<li><a href="https://github.com/NetDispenser/NetDispenser.github.io/blob/master/Credit-Meter-Assisted-Learning.pdf" target="_blank">Credit-Meter Assisted Learning</a>
+</ul>        
+
+</section>
+</div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
