@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <meta name="description" content="NetDispenser.github.io : Edu-kiosk and free software incentivizer">
+    <meta name="description" content="NetDispenser.github.io : Credit-Meter Assisted Learning">
     <title>NetDispenser</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=4dda11346182ab72e6e7f880b57298844fc98ebe">
@@ -68,8 +68,11 @@
 		  color: #333;
 		  font-size: 14px;
 		  padding: 8px 12px;
+/*		  position: absolute;*/
+/*		  bottom: 8px;*/
 		  width: 100%;
 		  text-align: justify;
+/*			height:50px;*/
 			overflow:scroll;
 		}
 
@@ -154,7 +157,7 @@
           </tr>
         </table>
       </center>
-<!--
+
       <center>
         <table>
           <tr>
@@ -165,11 +168,11 @@
 
         </table>
       </center>
--->
-<!--
+
+
 <div class="slideshow-container">
 
-	<div class="mySlides fade">
+<div class="mySlides fade">
   <div class="numbertext">1 / 8</div>
   <img src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/parent-feeder.png" style="width:100%"/>
   <div class="text">
@@ -178,42 +181,42 @@
 		completing web activities in exchange for special router credits.
 		Benefits include accountability and incentive to make a strong effort.
 	</div>
-	</div>
+</div>
 
-	<div class="mySlides fade">
+<div class="mySlides fade">
   <div class="numbertext">2 / 8</div>
   <img src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/train01.png" style="width:100%"/>
   <div class="text">
 		For example, using one of the prototype activities called <i>NowReadThis</i>,
 		children must read very carefully ...
 	</div>
-	</div>
+</div>
 
-	<div class="mySlides fade">
+<div class="mySlides fade">
   <div class="numbertext">3 / 8</div>
   <img src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/train03.png" style="width:100%"/>
   <div class="text">So they can reconstruct each paragraph ... </div>
-	</div>
+</div>
 
-	<div class="mySlides fade">
+<div class="mySlides fade">
   <div class="numbertext">4 / 8</div>
   <img src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/train02.png" style="width:100%"/>
   <div class="text">Of an article which their parents have pasted form them ... </div>
-	</div>
+</div>
 
-	<div class="mySlides fade">
+<div class="mySlides fade">
   <div class="numbertext">5 / 8</div>
   <img src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/train04.png" style="width:100%"/>
   <div class="text">To earn credits ...</div>
-	</div>
+</div>
 
-	<div class="mySlides fade">
+<div class="mySlides fade">
   <div class="numbertext">6 / 8</div>
   <img src="https://raw.githubusercontent.com/NetDispenser/CreditMeter/master/screenshots/credit-meter-051117a.png" style="width:100%"/>
   <div class="text">The credits are used for internet access through a special router that we call the <i>Credit-Meter</i></div>
-	</div>
+</div>
 
-	<div class="mySlides fade">
+<div class="mySlides fade">
   <div class="numbertext">7 / 8</div>
   <img src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/parent-feeder.png" style="width:100%"/>
   <div class="text">
@@ -221,9 +224,9 @@
 		Kids develop a bird-birdfeeder relationship with the activities website, thereby eliminating drama and the need for supervision.
 		We give the nickname <i>Credit-Feeder</i> to the activities website.
 	</div>
-	</div>
+</div>
 
-	<div class="mySlides fade">
+<div class="mySlides fade">
   <div class="numbertext">8 / 8</div>
   <img src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/master_infographic.png" style="width:100%"/>
   <div class="text">
@@ -236,7 +239,7 @@
 		strong effort when performing activities.
 		In turn, free education software developers (8) have incentive (7) to compete for those subscription fees, distributed by the parent-subscribers, themselves.
 		This can stimulate new innovations in free education software.
-		</div>
+	</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -255,33 +258,149 @@
 	<span class="dot" onclick="currentSlide(7)"></span>
 	<span class="dot" onclick="currentSlide(8)"></span>
 </div>
+
+<h3>What it is</h3>
+<p>The NetDispenser is a tool for parents and teachers, alike.
+	Kids earn their internet access through a kiosk-style system by
+	completing web activities in exchange for special router credits.
+	Kids learn that the fastest way to their goal is to make a strong effort.
+	Benefits include accountability and increased effectiveness of activities.
+</p>
+
+<h3>Why it exists</h3>
+<p>It was a product of necessity.  I wanted my kids to read certain articles and
+without drama.  Instead of me asking them to read, suddenly they were asking me
+for more things to read, i.e. more ways to earn time online.  Moreover, the source
+of their motivation did not seem to diminish their learning or retention.  Rather,
+it was merely the fact that they were motivated at all which made it effective.
+That means that <i>any activity</i> can be made more effective when assigned this way.
+
+<h3>How it works</h3>
+<p>The NetDispenser is two pieces: A <i>Credit-Meter</i>, which is a <a href="https://www.raspberrypi.org/" target="_blank">Raspberry-Pi</a>
+configured as a WiFi access point, broadcasts the <a href="http://meter.creditfeed.me" target="_blank"><i>Credit-Meter</i> website</a> locally.
+This device serves as the WiFi access point for the kids.  It only gives them internet access when the Credit-Meter application is actively consuming
+the credits they have earned.  When the credits are gone then the child must visit the <a href="http://www.creditfeed.me" target="_blank"><i>Credit-Feeder website</i></a>
+and perform more credit-earning activities which a parent or teacher has queued for them.  Once earned, the credits are transferred back to the
+Credit-Meter with the push of a single button.  The Credit-Feeder website is remote so that a parent can assign activities from the comfort of a
+remote office and then rest assured that the kids are working diligently.</p>
+
+<h3>Roadmap and Big Picture</h3>
+<p>
+This is a grass-roots project.  I (<a href="https://github.com/ccosse">@carloscosse</a>)
+began working on this several years ago.  Since then it has been re-developed several times with upgrades to hardware and software.
+The project isn't trying to sell anything or to make money for any one person.
+Rather, it seeks to provide two things that I wish I had when my own kids were younger:
+one, a tool to help parents supplement their childrens' education.  Two, to
+make development of free education software a viable pastime, and attractive beyond
+mere altruism or showcasing of ones' abilities.
+</p><p>
+The mere mention of money raises eyebrows.  My solution to aleviate concerns is
+to require a modest subscription fee to users who wish to utilize the platform, but
+to enable the subscriber to allocate 100% of their fee to the developer(s) of their choice.
+</p><p>
+To remain copacetic with the principles of openness and software freedom,
+we encourage opensource licenses and app design which can be used stand-alone and
+outside of the NetDispenser platform, i.e. no vendor lock-in tricks.  Thus, any user
+can benefit from the included applications, because the apps are free software, and
+any developer can take their work wherever they like, because their work is only
+tied to the NetDispenser platform through a minimal, non-intrusive code block.
+</p><p>
+This arrangement can keep users and developers in closer contact
+and provide incentive for people to develop their ideas for new education software.
+Please <a href="https://groups.google.com/forum/#!forum/netdispenser">join us</a>!
+</p>
+
+<h3>Google Group</h3>
+<iframe id="forum_embed"
+  src="javascript:void(0)"
+  scrolling="no"
+  frameborder="0"
+  width="900"
+  height="700">
+</iframe>
+<script type="text/javascript">
+  document.getElementById('forum_embed').src =
+     'https://groups.google.com/forum/embed/?place=forum/netdispenser'
+     + '&showsearch=true&showpopout=true&showtabs=false'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
+</script>
+<!--
+<ul>  <li><a href="https://groups.google.com/forum/#!forum/netdispenser" target="_blank">Help build the necessary community: join our forum!</a></ul>
 -->
+<h3>Developer Setup Instructions</h3>
+<ul>
+  <li><a href="https://github.com/NetDispenser/CreditMeter/blob/master/README.md" target="_blank">Developer Setup Instructions</a> (SD Card Needs 8G Hosting)
+</ul>
 
-<h3>Edu-Kiosk: A Tool For Parents</h3>
-<p>
-The NetDispenser is an edu-kiosk that enables a parent to supplement their childrens' education by requiring them to complete educational activities in exchange for internet access. Children quickly develop a bird-birdfeeder relationship with the system and learn to "feed" themselves as necessary with educational content chosen by the parent.  Rather than asking a child to read an article before playing more video games, for example, the child now asks for more articles to read.  Likewise, it can result in the child asking for more math work, or any subject at all because the NetDispenser acts as a single point of motivation.  And this consistent motivation translates to a consistent effort, regardless of subject matter. To realize its potential the project needs a wide variety of contributors.  But where is the incentive to contribute?
-</p>
-<h3>Free Edu-Software Incentivizer</h3>
-<p>
-The project aims to solve the "incentive problem" by creating an ecosystem around free education software that compensates developers and makes free education software development an attractive and viable pasttime.  Parents who utilize the credit-transfer functionality are asked to become subscribers, but they are also provided with an interface to distribute 100% of their subscription fee to the developers of their choice.
-</p>
-<p>
-This arrangement can increase communication between users and developers and result in fine-tuned activities with increased effectiveness.  And by providing a tangible incentive it can stimulate new innovations from a greater number of contributors.  The system also has potential as a research tool and for use in schools.  All of this is an experiment, and the experiment needs you.  Please join us!
-</p>
-<center>
-	<img src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/ecosystem.png"/>
-</center>
-<ol>
-	<li>The NetDispenser is an inexpensive Raspberry-Pi computer, configured as a WiFi Hotspot and  credit-meter, which grants internet access in exchange for earned credits.
-	<li>Credits are awarded by completing educational activities at the credit-feeder website, which is always accessible.
-	<li>Earned credits are transferred from the credit-feeder website back to the credit-meter device simply by clicking a button on the webpage broadcast by the device.
-	<li>A second button starts the credit-meter and grants full internet access to all of the child's devices.
-	<li>When the credits run out it's back to the credit-feeder to earn more credits.
-	<li>Because the credit-feeder website is online, parents can configure assignments and queue them from anywhere.
-	<li>The device is easily turned "on" when it's needed, and "off" when it's not.  The intent is not to restrict access to information.  Rather, it is a tool for parents to help them prepare their children for the future.
-</ol>
+<h3>An Overview Paper</h3>
+<ul>
+<li><a href="https://docs.google.com/document/d/1ymiI-l-yJZko1_N2LfPypsMm2XKnwBK5g7TZB9gEOtk/edit?usp=sharing" target="_blank">L-Earning: Earning with a capital L</a>
+</ul>
+<!--
+<h3>A Previous incarnation</h3>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/18iCCO1HyCC7xMkfivN0mkTNyGs1eFdCnoFX34mVrmFY/edit?usp=sharing" target="_blank">Credit-Meter Assisted Learning</a>
+</ul>
+-->
+</section>
+</div>
 
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+		<p>Published with <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
+	</footer>
+</div>
 
+<script>
+      window.mode=0;
+      function blink(){
+        console.log("blink");
+        if($("#red").hasClass("red")){
+	    	  $("#red").toggleClass("red")//off
+	      }
+        if($("#green").hasClass("green")){
+	    	  $("#green").toggleClass("green")//off
+	      }
+        if($("#yellow").hasClass("yellow")){
+	    	  $("#yellow").toggleClass("yellow")//off
+	      }
+        window.mode+=1;
+        if(window.mode>2)window.mode=0;
+        if(window.mode==0)$("#red").toggleClass("red");
+        else if(window.mode==1)$("#green").toggleClass("green");
+        else if(window.mode==2)$("#yellow").toggleClass("yellow");
+      }
+      window.setInterval(blink,2000);
+</script>
+<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+</script>
 <div style="display:none">
 <img src="http://www.creditfeed.me/static/creditfeeder/images/netdispenser_fp.png"/>
 </div>
