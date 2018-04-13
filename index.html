@@ -280,6 +280,7 @@
 	<img width="640" src="https://raw.githubusercontent.com/NetDispenser/NetDispenser.github.io/master/images/testimonials.png"/>
 </center>
 <center>
+
 <div class="slideshow-container">
 
 	<div class="mySlides fade">
@@ -369,6 +370,34 @@
 	<span class="dot" onclick="currentSlide(8)"></span>
 </div>
 </center>
+<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+</script>
 
 <div style="display:none">
 <img src="http://www.creditfeed.me/static/creditfeeder/images/netdispenser_fp.png"/>
